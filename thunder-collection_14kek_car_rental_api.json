@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "14kek_car_rental_api",
     "collectionId": "189414a6-87b6-45bd-88ae-f7d37f406674",
-    "dateExported": "2024-06-05T14:45:09.919Z",
+    "dateExported": "2024-06-05T15:27:15.756Z",
     "version": "1.2",
     "folders": [
         {
@@ -11,6 +11,13 @@
             "containerId": "",
             "created": "2024-06-05T14:16:17.546Z",
             "sortNum": 10000
+        },
+        {
+            "_id": "86362ae2-47e2-4611-9387-527b925e354e",
+            "name": "rentals",
+            "containerId": "",
+            "created": "2024-06-05T15:00:54.395Z",
+            "sortNum": 20000
         }
     ],
     "requests": [
@@ -41,15 +48,67 @@
             ]
         },
         {
+            "_id": "9a8ea4f4-ed64-4d1d-bc7a-b45f3dacbf59",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "86362ae2-47e2-4611-9387-527b925e354e",
+            "name": "get all rental",
+            "url": "{{URL}}/api/rentals",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-05T15:00:54.395Z",
+            "modified": "2024-06-05T15:01:19.273Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
             "_id": "25d7b841-0195-47c1-bcbb-4d7d301b803a",
             "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
             "containerId": "7794a058-f21c-4ad6-aed1-64d9274251b1",
             "name": "search car",
-            "url": "{{URL}}/api/cars/1",
+            "url": "{{URL}}/api/cars/8",
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-06-05T14:19:49.748Z",
-            "modified": "2024-06-05T14:20:06.483Z",
+            "modified": "2024-06-05T15:02:32.383Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "765ea267-ba00-4031-973a-d34733f4c2c2",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "86362ae2-47e2-4611-9387-527b925e354e",
+            "name": "search rental",
+            "url": "{{URL}}/api/rentals/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-05T15:00:54.396Z",
+            "modified": "2024-06-05T15:15:48.551Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -134,6 +193,64 @@
             ]
         },
         {
+            "_id": "d37df3da-3c50-4d8b-81e6-f8fb2caf7618",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "86362ae2-47e2-4611-9387-527b925e354e",
+            "name": "create new rental",
+            "url": "{{URL}}/api/rentals",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-05T15:00:54.397Z",
+            "modified": "2024-06-05T15:23:29.550Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"carId\": 8,\n    \"customerName\": \"John Doe\",\n    \"fromDate\": \"2024-06-05\",\n    \"days\": 30,\n    \"pricePerDay\": \"50000.00\",\n    \"abroad\": 0\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "67838c01-87e2-468f-a756-4e3c68d5cf1e",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "86362ae2-47e2-4611-9387-527b925e354e",
+            "name": "delete rental",
+            "url": "{{URL}}/api/rentals/201",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-06-05T15:00:54.398Z",
+            "modified": "2024-06-05T15:18:34.948Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
             "_id": "51b56372-7633-41dd-897c-f10845ce7433",
             "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
             "containerId": "7794a058-f21c-4ad6-aed1-64d9274251b1",
@@ -163,7 +280,64 @@
                 "raw": "{\n  \"licenseNumber\": \"SL-OO-001\"\n}",
                 "form": []
             }
+        },
+        {
+            "_id": "85f635a2-a72c-44fd-91b9-286c2a17861b",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "86362ae2-47e2-4611-9387-527b925e354e",
+            "name": "update rental",
+            "url": "{{URL}}/api/rentals/202",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2024-06-05T15:00:54.399Z",
+            "modified": "2024-06-05T15:25:45.491Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fromDate\": 111\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bd51c102-e84c-4ad1-b689-2e313cfb5939",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "7794a058-f21c-4ad6-aed1-64d9274251b1",
+            "name": "rentals of car",
+            "url": "{{URL}}/api/cars/1/rentals",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-06-05T14:57:40.459Z",
+            "modified": "2024-06-05T14:58:05.837Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
         }
     ],
-    "ref": "9QpKziDBiYMPFdmwtR8NDeAehvjMtG7IKWdeLU9jocdhAMR_58U1gHsFUn4K-uI6uZ0JYca65tNh9eFCivGmnQ"
+    "ref": "9QpKziDBiYMPFdmwtR8NDR5877Cv5Xea18BczO-F6yavv9dpE8Dn05C0bxpDdub7ExVy6qAy1nhe535HQciHEw"
 }
