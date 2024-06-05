@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\RentalController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('cars', CarController::class);
+Route::get('/cars/{car}/rentals', [CarController::class,'rentalsOfCar']);
+
+Route::apiResource('rentals', RentalController::class);

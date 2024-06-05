@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCarRequest;
 use App\Http\Requests\UpdateCarRequest;
 use App\Http\Resources\CarResource;
+use App\Http\Resources\RentalResource;
 use App\Models\Car;
 use Illuminate\Http\Request;
 
@@ -53,5 +54,10 @@ class CarController extends Controller
     {
         $car->delete();
         return response()->noContent();
+    }
+
+    public function rentalsOfCar(Car $car)
+    {
+        return RentalResource::collection($car->rentals);
     }
 }
