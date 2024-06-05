@@ -1,0 +1,169 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "14kek_car_rental_api",
+    "collectionId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+    "dateExported": "2024-06-05T14:45:09.919Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "7794a058-f21c-4ad6-aed1-64d9274251b1",
+            "name": "cars",
+            "containerId": "",
+            "created": "2024-06-05T14:16:17.546Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b121ac1f-bf2f-4bfb-aa5c-fce99423b91a",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "7794a058-f21c-4ad6-aed1-64d9274251b1",
+            "name": "get all car",
+            "url": "{{URL}}/api/cars",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-05T14:16:26.281Z",
+            "modified": "2024-06-05T14:18:13.865Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "25d7b841-0195-47c1-bcbb-4d7d301b803a",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "7794a058-f21c-4ad6-aed1-64d9274251b1",
+            "name": "search car",
+            "url": "{{URL}}/api/cars/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-05T14:19:49.748Z",
+            "modified": "2024-06-05T14:20:06.483Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "dac8f7a5-5a30-47d9-a9c2-f29f9a962d9a",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "7794a058-f21c-4ad6-aed1-64d9274251b1",
+            "name": "create new car",
+            "url": "{{URL}}/api/cars",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-05T14:31:32.352Z",
+            "modified": "2024-06-05T14:33:10.675Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "licenseNumber",
+                        "value": "AA-BB-987"
+                    },
+                    {
+                        "name": "brandAndType",
+                        "value": "Skoda Octavia RS"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "425493b5-4ddc-4a6a-bfd4-fcbc30a86813",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "7794a058-f21c-4ad6-aed1-64d9274251b1",
+            "name": "delete car",
+            "url": "{{URL}}/api/cars/11",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-06-05T14:38:12.356Z",
+            "modified": "2024-06-05T14:38:30.550Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "51b56372-7633-41dd-897c-f10845ce7433",
+            "colId": "189414a6-87b6-45bd-88ae-f7d37f406674",
+            "containerId": "7794a058-f21c-4ad6-aed1-64d9274251b1",
+            "name": "update car",
+            "url": "{{URL}}/api/cars/12",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2024-06-05T14:41:33.911Z",
+            "modified": "2024-06-05T14:43:40.023Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"licenseNumber\": \"SL-OO-001\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "9QpKziDBiYMPFdmwtR8NDeAehvjMtG7IKWdeLU9jocdhAMR_58U1gHsFUn4K-uI6uZ0JYca65tNh9eFCivGmnQ"
+}
